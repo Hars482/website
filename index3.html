@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Student Registration Form</h2>
+    <fieldset>
+        <legend>please fill the above details</legend>
+     <form method="get">
+        <u><h3>Personal detalils:-</h3></u>
+        <br><label for="firstname">Student Name:</label>
+        <input type="text" name="fname" id="firstname"placeholder="first name"></br>
+        <br><label for ="sname">Last Name:</label>
+        <input type="text" name="lname" id="sname" placeholder="surname"></br>
+        <br><label for="dob">DOB:</label>
+        <input type="date" name="month" id="dob" ></br>
+        <br><label for="gender">Gender:</label>
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="gender">
+        <label for="gender">Female</label>
+        <input type="radio"name="gender"id="gender" >
+        <label for="gender">Others</label>
+        <input type="radio"name="gender"id="gender"></br>
+        <u><h3>Contact details</h2></u>
+        <br><label for="mail">E-mail ID:</label>
+        <input type="email" name="user" id="mail" placeholder="info@gmail.com"></br>
+        <br><label for="code">Password:</label>
+        <input type="password"name="mailpass"id="code"placeholder="strong password"></br>
+        <br><label for="number">Mobile No:</label>
+        <input type="tel" name="phone" id="number"pattern="{0-9}{10}"></br>
+        <br><label for="link">Linkedin:</label>
+        <input type="url" id="link"></br>
+        <u><h3>Qualification:</h3></u>
+        <br><label for="study">Highest qualification:</label>
+        <input type="text" name="education" id="study"placeholder="highest qualification"></br>
+        <br><label for="study">course:</label>
+        <select id="degree"name="study">
+        <option value="Btech">B.tech</option>
+        <option value="b.Com">B.com</option>
+        <option value="B.sc">B.sc</option>
+        <option value="M.tech">M.tech</option>
+        <option value="MBA">MBA</option>
+        </select></br>
+        <br><label for="select">Course Interested:</label></br>
+        <input type="checkbox"id="select">Java full stack</br>
+        <input type="checkbox"id="select">Python full stack</br>
+        <input type="checkbox"id="select">Data science</br>
+        <br><u><h3>Address:</u></br>
+        <br><textarea name="description" id="add" rows="4" cols="30"></textarea></br>
+        <br><label for="state">State:</label>
+        <input list="states" name="state" id="state" placeholder="state">
+        <datalist id="states">
+        <option value="Telangana">Telangana</option>
+            <option value="Andhra pradesh">Andhra pradesh</option>
+            <option value="chennai">chennai</option>
+            </datalist></br>
+        <br><label for="address">City:</label>
+        <input type="text" name="add" id="address"placeholder="city name"></br>
+        <br><label for="pin">Pin code:</label>
+        <input type="text" name="numbers" id="pin"pattern={0-9}{6}></br>
+        <br><label for="files">Upload files:</label>
+        <input type="file" name="memo" id="files" ></br>
+       <br><label for="fav color">select your favourite color:</label>
+          <input type="color"id="favcolor"name="pink" value="color"></br>
+          <br><label for="feedback">Feedback:</label>
+          <input type="range"id="feedback"></br>
+        <br><button formaction="./signup.html">reset</button>
+        <button formaction="./table.html">submit</button></br>
+    </form> 
+    </fieldset>
+</body>
+</html>
